@@ -37,9 +37,13 @@ npm link        # makes `forge` available globally
 
 ### `forge init`
 
-Interactively generate a new project:
+Run this from the **parent directory** where you want your project created. Forge will create a new folder named after your project.
 
 ```bash
+# Navigate to wherever you keep your projects
+cd ~/projects
+
+# Forge creates ~/projects/todo-list/ for you
 forge init
 ```
 
@@ -63,7 +67,7 @@ Forge will then:
 **Example:**
 
 ```
-$ forge init
+~/projects $ forge init
 
 Welcome to Forge — AI-powered project generator
 
@@ -78,7 +82,7 @@ Calling Claude... (this may take a moment)
 Project "my-api" created at ./my-api/
 
 Next steps:
-  cd my-api
+  cd my-api      ← Forge created this folder for you
   npm install
   npm run dev
 ```
